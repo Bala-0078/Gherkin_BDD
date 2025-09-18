@@ -63,8 +63,7 @@ When('the user enters an invalid interest rate', async function () {
 When('the user enters an invalid loan term', async function () {
   await this.page.waitForSelector('#term', { timeout: 10000 });
  await page.waitForTimeout(3000);
-  await this.page.fill('#term', '-12');
-  await page.waitForTimeout(3000);
+  await this.page.fill('#term', '');
 });
 
 // Min values
